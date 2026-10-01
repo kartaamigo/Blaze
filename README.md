@@ -3,6 +3,7 @@
 <p align="center">
   <img src="docs/images/brand-logo.jpg" width="280" alt="Фирменный логотип Blaze — чёрный знак B со звездой на лаймовом фоне">
 </p>
+
 # Blaze
 
 **Твои виджеты. Твой рабочий ритм. На экране. Всегда.**
