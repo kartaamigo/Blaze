@@ -21,5 +21,3 @@ document.querySelector('#pin').onclick=pin;document.querySelector('#close').oncl
 document.addEventListener('click',async e=>{const button=e.target.closest('button');if(!button)return;if(button.dataset.action==='pin')return pin();if(button.dataset.action)bridge?.widgetAction(button.dataset.action);if(button.dataset.command&&bridge){try{focus=await bridge.focusCommand(button.dataset.command);renderFocus();}catch{document.querySelector('#error').textContent='Не удалось изменить таймер';}}});
 document.addEventListener('change',e=>{if(e.target.dataset.index!==undefined&&data){data.tasks[Number(e.target.dataset.index)].done=e.target.checked;bridge?.changeWidget({tasks:data.tasks});}});
 if(bridge){bridge.onWidget(render);bridge.getWidget().then(render);bridge.onFocus(s=>{focus=s;renderFocus();});bridge.getFocus().then(s=>{if(s){focus=s;renderFocus();}});}
-
-

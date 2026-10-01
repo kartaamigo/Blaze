@@ -18,4 +18,3 @@
   }
   const api={keys,aggregate};if(typeof module==='object'&&module.exports)module.exports=api;else root.BlazeAnalytics=api;
 })(globalThis);
-

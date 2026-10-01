@@ -5,4 +5,3 @@ class FocusTimer{
   command(command,minutes){this.tick();const now=this.now();if(command==='start'){if(this.started===null){this.duration=Math.max(60,Math.min(10800,(Number(minutes)||this.duration/60)*60));this.remaining=this.duration;this.started=now;this.worked=0;}this.running=true;this.last=now;this.end=now+this.remaining*1000;}else if(command==='pause'){this.running=false;}else if(command==='add'){this.remaining+=300;this.duration+=300;if(this.running)this.end+=300000;}else if(command==='stop'){if(this.started!==null)this.complete({app:'Фокус',task:'Фокус-сессия',started:new Date(this.started).toISOString(),ended:new Date(now).toISOString(),seconds:Math.round(this.worked),completed:false});this.started=null;this.running=false;this.remaining=this.duration;}return this.snapshot();}
 }
 module.exports={FocusTimer};
-

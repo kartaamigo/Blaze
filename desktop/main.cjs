@@ -113,5 +113,3 @@ ipcMain.on('notify',(event,data)=>{if(isMain(event))notify(data?.title||'Blaze',
 ipcMain.on('window:control',(event,action)=>{const win=BrowserWindow.fromWebContents(event.sender);if(!win)return;if(action==='close')win.close();if(action==='minimize')win.minimize();if(action==='maximize')win.isMaximized()?win.unmaximize():win.maximize();});
 app.on('before-quit',()=>{quitting=true;tracker?.kill();activityDirty=true;saveActivity();});
 app.on('window-all-closed',()=>app.quit());
-
-

@@ -301,4 +301,3 @@ $('#today').textContent = new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Mosc
 if(innerWidth<1250)selected=null;
 save(false);renderContent();renderEditor();
 if(['library','activity','days','settings'].includes(location.hash.slice(1)))setPage(location.hash.slice(1));
-
