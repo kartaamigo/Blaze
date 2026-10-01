@@ -3,7 +3,7 @@
 <p align="center">
   <img src="docs/images/brand-logo.jpg" width="110" alt="Фирменный знак Blaze — B со звездой на лаймовом фоне">
   &nbsp;&nbsp;
-  <img src="docs/images/brand-full.png" width="480" alt="Полная версия логотипа Blaze со словесным знаком BLAZE">
+  <img src="docs/images/brand-full-on-dark.png" width="480" alt="Полная версия логотипа Blaze со словесным знаком BLAZE">
 </p>
 
 # Blaze
