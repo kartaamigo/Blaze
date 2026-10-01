@@ -1,0 +1,15 @@
+{
+  "name": "blaze-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Blaze — личное пространство и виджеты рабочего стола",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "preview": "node server.cjs",
+    "check": "node --check app.js && node --check widget.js && node --check analytics.js && node --check desktop/main.cjs && node --check desktop/preload.cjs && node --check desktop/focus-timer.cjs && node --check server.cjs && node verify-behavior.cjs"
+  },
+  "devDependencies": {
+    "electron": "42.11.8"
+  }
+}

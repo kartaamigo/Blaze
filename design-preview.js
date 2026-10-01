@@ -1,0 +1,4 @@
+// A separate, read-only fixture for comparing the supplied layouts.
+if(new URLSearchParams(location.search).get('preview')==='design'){
+  window.blazeDesignPreview={activity:{'2026-09-24':{Figma:14400,'VS Code':6480,Safari:480},'2026-09-25':{Figma:10080,'VS Code':9000},'2026-09-26':{Safari:3600},'2026-09-27':{'VS Code':5760},'2026-09-28':{Figma:11880,'VS Code':7200},'2026-09-29':{Figma:10260,'VS Code':10200,Safari:3300},'2026-09-30':{Figma:11520,'VS Code':7680,Safari:3840}},sessions:[{app:'Figma',task:'Главный экран Blaze',started:'2026-09-30T09:00:00+03:00',ended:'2026-09-30T10:40:00+03:00',seconds:6000},{app:'VS Code',task:'Компоненты виджетов',started:'2026-09-30T10:55:00+03:00',ended:'2026-09-30T12:15:00+03:00',seconds:4800},{app:'Figma',task:'Библиотека и состояния',started:'2026-09-30T13:00:00+03:00',ended:'2026-09-30T14:32:00+03:00',seconds:5520}]};
+}
